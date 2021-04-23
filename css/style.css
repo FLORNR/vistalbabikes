@@ -1,0 +1,1055 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+.tipografiaN-extra-light {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+}
+
+.tipografiaN-light {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+
+.tipografiaN-regular {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+.tipografiaN-semi-bold {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.tipografiaN-bold {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.tipografiaN-extra-bold {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+}
+
+.tipografiaN-black {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+}
+
+.letterBlack {
+  color: black;
+}
+
+.letterWhite {
+  color: white;
+}
+
+.bgGreen {
+  background-color: #b6c62c;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.bgWhite {
+  background-color: white;
+}
+
+.bgYellow {
+  background-color: #fded00;
+}
+
+.bgGrey {
+  background-color: #9e9e9e33;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 25px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 20px 0;
+  font-weight: 600;
+  text-align: left;
+}
+
+h4 {
+  font-size: 15px;
+  color: black;
+  background-color: #b6c62c;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+/*HEADER / MENÚ DE NAVEGACIÓN*/
+#header {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00000070;
+  z-index: 100;
+}
+
+#header ul {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9em;
+  margin-right: 40px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#header ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  padding: 5px;
+}
+
+#header .reserva {
+  margin-left: 100px;
+  font-size: 1.2em;
+}
+
+#header .logo {
+  width: 130px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+#header .logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#header .botonReserva {
+  color: black;
+  padding: 0 1em;
+  margin-right: 30px;
+  line-height: 2rem;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#header .botonReserva:hover {
+  background-color: black;
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*ICONO FIJO*/
+.whatsappFijo {
+  position: fixed;
+  bottom: 65px;
+  right: 45px;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 100;
+}
+
+/*FOTO PUBLICITARIA*/
+.publicidadReserva {
+  width: 100%;
+  height: 100vh;
+}
+
+.publicidadReserva h5 {
+  font-size: 3em;
+  color: white;
+  padding-bottom: 1.3em;
+}
+
+/*FORMULARIO RESERVA*/
+#miFormularioReserva {
+  font-size: 13px;
+  color: black;
+  background-color: #9e9e9e33;
+  height: auto;
+  padding: 5px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hacerReserva {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9e9e9e33;
+  margin: 50px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.imgForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  min-height: 500px;
+  background-image: url("../media/fotoformulario.jpg");
+  background-position: left center;
+  background-size: cover;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 80px 10px;
+  font-size: 3rem;
+}
+
+/*ADAPTACIÓN MOBILE*/
+@media all and (max-width: 992px) {
+  #header {
+    position: fixed;
+    background-color: black;
+    color: white;
+    z-index: 100;
+  }
+  #header a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .publicidadReserva {
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
+  .navbar-toggler {
+    background-color: white;
+  }
+  #miFormularioReserva {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgForm {
+    background-position: center;
+    background-size: cover;
+    margin: 40px 10px;
+    font-size: 14px;
+  }
+  .mapa iframe {
+    width: auto;
+    height: auto;
+  }
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*RESERVA HOME*/
+#irContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 90px 0px;
+  width: 100%;
+}
+
+.fotoContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/fotocontacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 400px;
+  width: 100%;
+}
+
+.fotoContacto h3 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+/*CONTACTO Y PAGO HOME*/
+.ubicarContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  line-height: 2.5;
+  position: center;
+}
+
+.detalleContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.detalleTripadvisor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.cadaUno {
+  padding: 50px 150px;
+}
+
+@media all and (max-width: 992px) {
+  .fotoContacto {
+    background-image: url(../media/fotocontactoMobile.jpg);
+    background-size: cover;
+  }
+  .fotoContacto h3 {
+    font-size: 2rem;
+  }
+  .detalleTripadvisor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .detalleTripadvisor .cadaUno {
+    padding: 30px 10px;
+  }
+}
+
+/*SECCIÓN NOSOTROS*/
+.nosotrosParteUno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 60px;
+}
+
+.nosotrosParteUno p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.fotoNosotrosUno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  min-height: 600px;
+  background-image: url(../media/nosotrosuno.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px groove white;
+  margin: 30px 0px 30px 5px;
+  background-position: right;
+  margin: 110px 0px 30px 5px;
+}
+
+.nosotrosParteDos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9e9e9e33;
+}
+
+.nosotrosParteDos p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.fotoNosotrosDos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  min-height: 600px;
+  background-image: url(../media/nosotros2.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px groove white;
+  margin: 30px 0px 30px 5px;
+  min-height: 400px;
+  background-position: left;
+}
+
+.nosotrosParteTres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotrosParteTres p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 450px;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.fotoNosotrosTres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  min-height: 600px;
+  background-image: url(../media/nosotros3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px groove white;
+  margin: 30px 0px 30px 5px;
+  background-position: right;
+}
+
+/*ADAPTACIÓN MOBILE*/
+@media all and (max-width: 992px) {
+  .nosotrosParteUno {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 5px;
+  }
+  .nosotrosParteUno p {
+    padding: 2px 10px;
+    width: auto;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .nosotrosParteUno .fotoNosotrosUno {
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    background-position: center;
+    background-image: url(../media/nosotrosunoMobile.jpg);
+    background-size: cover;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .nosotrosParteDos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 5px;
+  }
+  .nosotrosParteDos p {
+    padding: 2px 10px;
+    width: auto;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .nosotrosParteDos .fotoNosotrosDos {
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    background-position: center;
+    background-image: url(../media/nosotros2Mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .nosotrosParteTres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 5px;
+  }
+  .nosotrosParteTres p {
+    padding: 2px 10px;
+    width: auto;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .nosotrosParteTres .fotoNosotrosTres {
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    background-position: center;
+    background-image: url(../media/nosotros3Mobile.jpg);
+    background-size: cover;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+/*SECCION SERVICIOS*/
+#todosMisServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.3;
+  margin: auto;
+  padding: 110px;
+}
+
+#todosMisServicios h3 {
+  padding: 3px 0;
+}
+
+.detalleServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 30px;
+}
+
+.detalleServicios h2 {
+  font-size: 50px;
+  border: none;
+}
+
+.experiencias {
+  padding: 0 70px;
+}
+
+.imgAutoguiado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/autoguiado.jpg);
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.imgGuiado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/guiado.jpg);
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.imgElectrica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/electrica.jpg);
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media all and (max-width: 992px) {
+  #todosMisServicios {
+    width: 100%;
+    padding: 40px 5px;
+  }
+  .detalleServicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 5px;
+  }
+  .experiencias {
+    padding: 20px 5px;
+  }
+  .imgAutoguiado {
+    background-image: url(../media/autoguiadoMobile.jpg);
+    background-size: cover;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 5px 0px;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .imgAutoguiado h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .imgGuiado {
+    background-image: url(../media/guiadoMobile.jpg);
+    background-size: cover;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 5px 0px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .imgGuiado h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .imgElectrica {
+    background-image: url(../media/electricaMobile.jpg);
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 5px 0px;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .imgElectrica h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+/*SECCION BODEGAS*/
+.zonasYBodegas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 110px 0;
+}
+
+.zonasYBodegas h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 35px 0;
+}
+
+.descripcionPorZona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 40px;
+}
+
+.descripcionPorZona h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.descripcionPorZona p {
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.card {
+  background-color: #9e9e9e33;
+  margin-bottom: 5px;
+}
+
+@media all and (max-width: 992px) {
+  .zonasYBodegas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .zonasYBodegas h2 {
+    background-color: #b6c62c;
+    margin-top: 40px;
+    padding: 5px;
+  }
+}
+
+/*SECCION OPINIONES*/
+#todasMisOpiniones {
+  font-size: 15px;
+  padding: 90px;
+}
+
+/*SECCION FAQ*/
+.faq {
+  padding: 105px;
+}
+
+.fotoFaq {
+  min-height: 400px;
+  background-image: url(../media/faq.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fotoFaq h3 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card-header {
+  background-color: #b6c62cc7;
+  padding: 1px 5px;
+  color: black;
+}
+
+.cambio .card-header {
+  background-color: #fded009c;
+  color: black;
+}
+
+.card-body {
+  background-color: white;
+}
+
+.bloquePreguntas {
+  margin-top: 25px;
+}
+
+.btn-link {
+  color: black;
+}
+
+.btn-link:focus,
+.btn-link .focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*SECCIÓN FOOTER*/
+#miFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 14px;
+  color: black;
+  background-color: #9e9e9e33;
+  text-align: center;
+  padding: 30px 10px;
+  border-top: 1.5px solid black;
+}
+
+#miFooter ul {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+#miFooter ul li {
+  padding: 5px 0;
+}
+
+@media all and (max-width: 992px) {
+  #miFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .direccionFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+  .datosUbicacion {
+    margin-bottom: 25px;
+  }
+  .whatsappFijo {
+    position: fixed;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

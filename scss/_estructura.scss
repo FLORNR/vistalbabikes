@@ -1,0 +1,692 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+h2 {
+	font-size: 25px;
+	padding: 20px 0;
+	text-align:$centro;
+}
+h3{
+	font-size: 20px;
+	padding: 20px 0;
+    font-weight: 600;
+	text-align:$izquierda;
+
+}
+
+h4{
+	font-size: 15px;
+	color:$letra-negra;
+	background-color:$fondo-verde;
+    font-weight: 400;
+	margin-top: 15px;
+}
+
+
+/*HEADER / MENÚ DE NAVEGACIÓN*/
+#header {
+	width: $ancho-100;
+	min-height: 40px;
+	display: $flexible;
+	flex-direction: $fila;
+	flex-wrap: nowrap;
+	position: $fijo;
+	justify-content: space-between;
+	align-items: $centro;
+	background-color: $fondo-menu;
+	z-index: $profundidad-100;
+		ul {
+			list-style: none;
+			margin-left: 30px;
+		
+			li a {
+				text-decoration: none;
+				color: $letra-blanca;
+				font-size: 0.9em;
+				margin-right: 40px;
+				border-radius: 10px 10px 10px 10px;
+					&:hover {
+						background-color:$fondo-negro;
+						color: $letra-blanca;
+						border-radius: 10px 10px 10px 10px;
+						transform: scale(1.1);
+						padding: 5px;
+						}
+					}	
+				}
+		.reserva {
+			margin-left:100px;
+            font-size: 1.2em;
+		}	
+
+		.logo {
+			width: 130px;
+			margin-left: 50px;
+			margin-top: 5px;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+		.botonReserva {
+            color: $letra-negra;
+			padding: 0 1em;
+			margin-right: 30px;
+			line-height: 2rem;
+			font-size: 1em;
+			text-decoration: none;
+			border-radius: 10px 10px 10px 10px;
+
+			&:hover {
+				background-color: $fondo-negro;
+				color: $letra-blanca;
+				transform: scale(1.1);
+
+			}
+		}	
+	}
+/*ICONO FIJO*/
+.whatsappFijo {
+	position: $fijo;
+	bottom: 65px;
+	right: 45px;
+	animation-iteration-count: infinite;
+	z-index: $profundidad-100;
+	}
+
+/*FOTO PUBLICITARIA*/
+.publicidadReserva {
+	width: $ancho-100;
+	height: 100vh;
+
+	h5{
+		font-size: 3em;
+		color: $letra-blanca;
+		padding-bottom:1.3em;
+		}
+	}
+
+/*FORMULARIO RESERVA*/
+
+#miFormularioReserva{
+	font-size: 13px;
+	color:$letra-negra;
+	background-color: $fondo-gris;
+	height: auto;
+	padding: 5px 5px;
+	box-sizing: border-box;	
+	}
+
+.hacerReserva {
+	display: $flexible;
+	flex-direction: $fila;
+	align-items: $centro;
+	background-color: $fondo-gris;
+	margin: 50px 10px;
+	box-sizing: border-box;
+	}
+
+.imgForm{
+	display: $flexible;
+	width: auto;
+	min-height: 500px;
+	background-image: url('../media/fotoformulario.jpg');
+	background-position: $izquierda $centro;
+	background-size: cover;
+	align-items: flex-end;
+	justify-content: $centro;
+	text-align: $centro;
+	margin: 80px 10px;
+	font-size: 3rem;
+	}
+
+/*ADAPTACIÓN MOBILE*/
+@media all and (max-width: 992px) {
+
+	#header {
+		position: $fijo;
+		background-color: $fondo-negro;
+		color: $letra-blanca;
+		z-index: $profundidad-100;
+			 a {
+			 	&:hover {
+				background-color: $fondo-blanco;
+				color:$letra-negra;
+				border-radius:10px 10px 10px 10px;
+				}
+			}
+		}
+
+	.publicidadReserva {
+		padding-top: 70px;
+		width:$ancho-100;
+		height: auto;
+        font-size: 14px;
+		}
+
+	.navbar-toggler {
+		background-color: $fondo-blanco;
+		}
+
+	#miFormularioReserva {
+	display: $flexible;
+	flex-direction: $columna;
+		}
+
+	.imgForm {
+		background-position: $centro;
+		background-size: cover;
+		margin: 40px 10px;
+		font-size: 14px;
+		}
+
+	.mapa iframe {
+		width: auto;
+		height: auto;
+		}
+ 	
+ 	.contacto {
+ 		display: $flexible;
+ 		flex-direction: $columna;
+ 		text-align: $centro;
+ 		justify-content: $centro;
+ 		align-items: $centro;
+ 		}
+}
+
+
+/*RESERVA HOME*/
+#irContacto {
+	display: $flexible;
+	flex-direction: $columna;
+	justify-content: $centro;
+	align-items: $centro;
+	margin: 90px 0px;
+    width: $ancho-100;
+      
+}
+
+.fotoContacto {
+	display: flex;
+    background-image: url(../media/fotocontacto.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: $centro;
+	align-items: flex-end;
+    min-height: 400px;
+    width: 100%;
+
+	 	h3 {
+			font-size: 3.5rem;
+			text-align: $centro;
+		}
+	}
+
+/*CONTACTO Y PAGO HOME*/
+.ubicarContacto {
+	display: $flexible;
+	flex-direction: $columna;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: $centro;
+	text-align: $centro;
+	margin:30px 0;
+    line-height: 2.5;
+    position: $centro;
+	}
+
+.detalleContacto {
+	display: $flexible;
+	flex-direction: $columna;
+	align-items: $centro;
+	justify-content: $centro;
+	text-align:$centro;
+}
+
+.detalleTripadvisor {
+    display: $flexible;
+	flex-direction: $fila;
+	align-items: space-between;
+	justify-content: $centro;
+	text-align:$centro;
+}
+.cadaUno {
+    padding: 50px 150px;
+}
+
+@media all and (max-width: 992px) {
+    .fotoContacto {
+        background-image: url(../media/fotocontactoMobile.jpg);
+        background-size: cover;
+            h3{
+                font-size: 2rem;
+            }
+    }
+    .detalleTripadvisor {
+        display: $flexible;
+        justify-content: $centro;
+        align-items: $centro;
+        .cadaUno {
+            padding: 30px 10px;
+         }
+    }
+}
+
+/*SECCIÓN NOSOTROS*/
+
+@mixin fotosEnNosotros ($imagen){
+    display: $flexible;
+	width:($ancho-100/10)*7;
+	min-height: 600px;
+    background-image: $imagen;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 4px groove white;
+    margin: 30px 0px 30px 5px;
+
+}
+
+@mixin descripcionEnNosotros {
+    display: $flexible;
+	width: $ancho-100;
+	flex-direction: $fila;
+    flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: $centro;
+}
+
+@mixin nosotrosParrafo {
+    display: $flexible;
+	width: 450px;
+	font-size: 1.2rem;
+    line-height: 2.5;
+	padding: 30px 40px;
+    text-align: $centro;
+}
+.nosotrosParteUno {
+	@include descripcionEnNosotros;
+    padding-top: 60px;
+		p {
+			@include nosotrosParrafo;
+		}
+	}
+
+
+.fotoNosotrosUno {
+	@include fotosEnNosotros(url(../media/nosotrosuno.jpg));
+        background-position:$derecha;
+        margin: 110px 0px 30px 5px;
+    }
+
+.nosotrosParteDos {
+	@include descripcionEnNosotros;
+	background-color: $fondo-gris;
+		 p {
+			@include nosotrosParrafo;
+		}
+	}
+
+
+.fotoNosotrosDos {
+    @include fotosEnNosotros(url(../media/nosotros2.JPG));
+	min-height: 400px;
+    background-position:$izquierda;
+	}
+
+.nosotrosParteTres {
+	@include descripcionEnNosotros;
+		p {
+			@include nosotrosParrafo;
+		}
+	}
+
+.fotoNosotrosTres {
+    @include fotosEnNosotros(url(../media/nosotros3.jpg));
+	background-position:$derecha;
+	}
+
+/*ADAPTACIÓN MOBILE*/
+@media all and (max-width: 992px) {
+ 
+    @mixin nosotrosMobile {
+        display:$flexible;
+		flex-direction: $columna;
+		margin: 5px 5px
+    }
+
+    @mixin fotoNosotrosMobile {
+        width: auto;
+		height: auto;
+		margin: 5px 5px;
+		background-position: center
+    }
+
+    @mixin nosotrosParrafoMobile {
+        padding: 2px 10px;
+		width:auto;	
+		font-size: 1.1rem;
+		text-align: center;
+    }
+
+	.nosotrosParteUno {
+		@include nosotrosMobile;
+		    p{
+            @include nosotrosParrafoMobile;
+            
+		}
+	        .fotoNosotrosUno{
+			@include fotoNosotrosMobile;
+            background-image: url(../media/nosotrosunoMobile.jpg);
+            background-size: cover;
+            width: $ancho-100;
+            justify-content:$centro;
+            order: -1;
+		}
+	}
+	.nosotrosParteDos {
+		@include nosotrosMobile;
+		    p{
+			@include nosotrosParrafoMobile;
+		}
+		    .fotoNosotrosDos {
+			@include fotoNosotrosMobile;
+            background-image: url(../media/nosotros2Mobile.jpg);
+            background-size: cover;
+            width: $ancho-100;
+            justify-content:$centro;
+            order: 0;
+		}
+	}
+	.nosotrosParteTres{
+		@include nosotrosMobile;
+		p{
+			@include nosotrosParrafoMobile;
+           
+		}
+		.fotoNosotrosTres {
+			@include fotoNosotrosMobile;
+            background-image: url(../media/nosotros3Mobile.jpg);
+            background-size: cover;
+            width: $ancho-100;
+            justify-content:$centro;
+            order: -1;
+		}
+	}
+
+}
+
+/*SECCION SERVICIOS*/
+
+#todosMisServicios {
+	display: $flexible;
+	flex-direction:$columna;
+	justify-content: space-between;
+	align-items: $centro;
+	font-size: 0.9rem;
+	text-align: $izquierda;
+	line-height:1.3;
+	margin: auto;
+	padding:110px; 
+        h3 {
+            padding: 3px 0;
+        }
+	}
+
+.detalleServicios {
+	display: $flexible;
+	width: $ancho-100;
+	flex-direction:$fila;
+	justify-content: space-around;
+	align-items:$centro;
+	padding: 50px 30px;
+		 h2 {
+			font-size: 50px;
+			border: none;
+		}
+	}
+
+.experiencias {
+	padding: 0 70px;
+	}
+@mixin imagenesExperiencias ($imagen) {
+    display: $flexible;
+	background-image:$imagen;
+	width:$ancho-100;
+	min-height:600px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: $centro;
+	align-items: flex-start;
+}
+.imgAutoguiado {
+    @include imagenesExperiencias(url(../media/autoguiado.jpg));
+	}
+
+.imgGuiado{
+    @include imagenesExperiencias(url(../media/guiado.jpg));
+	}
+
+.imgElectrica {
+    @include imagenesExperiencias(url(../media/electrica.jpg));
+	}
+    @media all and (max-width: 992px) {
+        #todosMisServicios{
+            width: $ancho-100;
+            padding: 40px 5px;
+        }
+        .detalleServicios {
+            display: flex;
+            width: $ancho-100;
+            flex-direction:$columna;
+            justify-content: $izquierda;
+            align-items: $centro;
+            padding: 0 5px;
+        }
+        .experiencias {
+            padding: 20px 5px;
+        }
+        .imgAutoguiado {
+            background-image: url(../media/autoguiadoMobile.jpg);
+            background-size: cover;
+            width: $ancho-100;
+            justify-content:$centro;
+            align-items: flex-end;
+            padding: 5px 0px;
+            order: 0;
+
+             h2 {
+                    font-size: 2.5rem;
+                    text-align: $centro;
+                }
+        }
+        .imgGuiado {
+            background-image: url(../media/guiadoMobile.jpg);
+            background-size: cover;
+            width: $ancho-100;
+            justify-content:$centro;
+            align-items: flex-end;
+            padding: 5px 0px;
+            order: -1;
+
+             h2 {
+                    font-size: 2rem;
+                    text-align: $centro;
+                }
+        }
+        .imgElectrica {
+            background-image: url(../media/electricaMobile.jpg);
+            width: $ancho-100;
+            justify-content:$centro;
+            align-items: flex-end;
+            padding: 5px 0px;
+            order: 0;
+
+             h2 {
+                    font-size: 2.5rem;
+                    text-align: $centro;
+                }
+
+        }
+    }
+/*SECCION BODEGAS*/
+.zonasYBodegas{
+	display:$flexible;
+	flex-direction: $fila;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 110px 0;
+		 h2{
+			font-size: 30px;
+			text-align:$centro;
+			padding: 35px 0;
+		}
+
+	}
+
+.descripcionPorZona {
+	display:$flexible;
+	flex-direction:$columna;
+	align-items: $centro;
+	justify-content: $centro;
+	padding: 10px 40px;
+        h5{
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: $centro;
+        }
+
+        p {
+			font-size: 0.8rem;
+			text-align: $izquierda;
+			line-height: 1.3;
+		}
+	}
+.card {
+    background-color: $fondo-gris;
+    margin-bottom: 5px;
+}
+
+@media all and (max-width: 992px) {
+    .zonasYBodegas {
+        display: $flexible;
+        flex-direction: $columna;
+        justify-content: $centro;
+        align-items: $centro;
+        h2 {
+            background-color: $fondo-verde;
+            margin-top: 40px;
+            padding: 5px;
+        }
+    }
+}
+
+/*SECCION OPINIONES*/
+
+#todasMisOpiniones {
+	font-size: 15px;
+	padding: 90px;
+	}
+
+/*SECCION FAQ*/
+
+.faq {
+
+	padding: 105px;
+		}
+.fotoFaq {
+    min-height: 400px;
+    background-image: url(../media/faq.jpg);
+    background-size: cover;
+    background-position:$centro;
+        h3{
+            font-size: 3rem;
+            color: $letra-blanca;
+            text-align: $centro;
+        }
+}
+.card {
+    margin-bottom: 10px;
+}
+.card-header {
+    background-color: #b6c62cc7;
+    padding: 1px 5px;
+    color: black;
+}
+.cambio .card-header {
+    background-color: #fded009c;
+    color: black;
+}
+
+.card-body {
+    background-color: $fondo-blanco;
+}
+
+.bloquePreguntas {
+    margin-top:25px;
+}
+
+.btn-link {
+    color:black;
+     &:focus, 
+        .focus {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        color: $letra-blanca;
+        }
+    
+    &:hover {
+        text-decoration: none;
+        color: $letra-blanca;
+    }
+}
+
+/*SECCIÓN FOOTER*/
+#miFooter {
+	display:$flexible;
+	justify-content: space-around;
+	align-items: flex-end;
+	font-size: 14px;
+	color:$letra-negra;
+	background-color:$fondo-gris;
+	text-align:$centro;
+	padding: 30px 10px;
+	border-top: 1.5px solid black;
+		 ul {
+			list-style: none;
+            margin-bottom: 0px;
+				li {
+					padding: 5px 0;
+			}
+		}
+	}
+
+@media all and (max-width: 992px) {
+     #miFooter {
+        display: $flexible;
+        flex-direction: $columna;
+        justify-content: $centro;
+        align-items: $centro;
+    }
+    .direccionFooter {
+        display: $flexible;
+        flex-direction: $columna;
+        justify-content: $centro;
+        align-items: $centro;
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+    }
+
+    .datosUbicacion {
+        margin-bottom: 25px;
+    }
+
+    .whatsappFijo {
+        position: $fijo;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+}
+

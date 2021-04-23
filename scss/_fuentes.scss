@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+@mixin fuente {
+    font-family: 'Nunito', sans-serif;
+}
+
+@each $key, $value in $fontSizes {
+    .tipografiaN-#{$key}{
+        @include fuente;
+        font-weight: $value;
+    }
+}

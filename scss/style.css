@@ -1,0 +1,767 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+.tipografiaN-200 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 200;
+}
+
+.tipografiaN-300 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.tipografiaN-400 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+.tipografiaN-600 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.tipografiaN-700 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.tipografiaN-800 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+.tipografiaN-900 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+}
+
+.letterBlack {
+  color: black;
+}
+
+.letterWhite {
+  color: white;
+}
+
+.bgGreen {
+  background-color: #b6c62c;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.bgWhite {
+  background-color: white;
+}
+
+.bgYellow {
+  background-color: #fded00;
+}
+
+.bgGrey {
+  background-color: #9e9e9e33;
+}
+
+h2 {
+  font-size: 25px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  padding: 20px 0;
+  text-align: left;
+}
+
+h4 {
+  font-size: 15px;
+  color: black;
+  background-color: #b6c62c;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+/*HEADER / MENÚ DE NAVEGACIÓN*/
+#header {
+  width: 100%;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00000070;
+  z-index: 100;
+}
+
+#header ul {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  margin-right: 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#header ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  padding: 5px;
+}
+
+#header .reserva {
+  margin-left: 90px;
+}
+
+#header .logo {
+  width: 130px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+#header .logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#header .botonReserva {
+  padding: 0 1em;
+  margin-right: 30px;
+  line-height: 2rem;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 10px 10px 10px 10px;
+}
+
+#header .botonReserva:hover {
+  background-color: black;
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/*ICONO FIJO*/
+.whatsappFijo {
+  position: fixed;
+  bottom: 65px;
+  right: 45px;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: 100;
+}
+
+/*FOTO PUBLICITARIA*/
+.publicidadReserva {
+  width: 100%;
+  height: 100vh;
+}
+
+.publicidadReserva h5 {
+  font-size: 3em;
+  color: white;
+  padding-bottom: 0.8em;
+}
+
+/*FORMULARIO RESERVA*/
+#miFormularioReserva {
+  font-size: 13px;
+  color: black;
+  background-color: #9e9e9e33;
+  height: auto;
+  padding: 5px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hacerReserva {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9e9e9e33;
+  margin: 50px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.imgForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  min-height: 500px;
+  background-image: url("../media/fotoformulario.jpg");
+  background-position: left center;
+  background-size: cover;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 80px 10px;
+  font-size: 3rem;
+}
+
+/*ADAPTACIÓN MOBILE*/
+@media all and (max-width: 992px) {
+  #header {
+    position: fixed;
+    background-color: black;
+    color: white;
+    z-index: 100;
+  }
+  #header a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .publicidadReserva {
+    padding-top: 70px;
+    width: 100%;
+    height: auto;
+  }
+  .navbar-toggler {
+    background-color: white;
+  }
+  #miFormularioReserva {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgForm {
+    background-position: center;
+    background-size: cover;
+    margin: 40px 10px;
+    font-size: 14px;
+  }
+  .mapa iframe {
+    width: auto;
+    height: auto;
+  }
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*RESERVA HOME*/
+#irContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 90px 0px;
+}
+
+.fotoContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/fotocontacto.jpg);
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.fotoContacto .fotoContacto__h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.pago h3 {
+  text-align: center;
+}
+
+/*CONTACTO Y PAGO HOME*/
+.ubicarDatosContactoYPago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 4em;
+}
+
+.detalleContactoPago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-right: 70px;
+}
+
+/*SECCIÓN NOSOTROS*/
+.nosotrosParteUno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px;
+}
+
+.nosotrosParteUno .nosotrosParteUno__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  font-size: 1rem;
+  line-height: 2.5;
+  padding: 40px 30px;
+}
+
+.fotoNosotrosUno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/nosotrosuno.JPG);
+  width: 70%;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  border: 4px groove white;
+}
+
+.nosotrosParteDos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9e9e9e33;
+  padding: 80px;
+}
+
+.nosotrosParteDos .nosotrosParteDos__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  font-size: 1rem;
+  line-height: 2.5;
+  padding: 40px 30px;
+}
+
+.fotoNosotrosDos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/nosotros2.JPG);
+  width: 60%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 4px groove white;
+}
+
+.nosotrosParteTres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nosotrosParteTres .nosotrosParteTres__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  font-size: 1rem;
+  line-height: 2.5;
+  padding: 40px 30px;
+}
+
+.fotoNosotrosTres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/nosotros3.jpg);
+  width: 70%;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*ADAPTACIÓN MOBILE*/
+@media all and (max-width: 992px) {
+  .nosotrosParteUno {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 5px;
+  }
+  .nosotrosParteUno p {
+    padding: 2px 2px;
+    width: auto;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .nosotrosParteUno .fotoNosotrosUno {
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    background-position: center;
+  }
+  .nosotrosParteDos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 5px;
+  }
+  .nosotrosParteDos p {
+    padding: 2px 2px;
+    width: auto;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .nosotrosParteDos .fotoNosotrosDos {
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    background-position: center;
+  }
+  .nosotrosParteTres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5px 5px;
+  }
+  .nosotrosParteTres p {
+    padding: 2px 2px;
+    width: auto;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .nosotrosParteTres .fotoNosotrosTres {
+    width: auto;
+    height: auto;
+    margin: 5px 5px;
+    background-position: center;
+  }
+}
+
+/*SECCION SERVICIOS*/
+#todosMisServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.4;
+  margin: auto;
+  padding: 80px;
+}
+
+.detalleServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 30px;
+}
+
+.detalleServicios h2 {
+  font-size: 50px;
+  border: none;
+}
+
+.experiencias {
+  padding: 0 70px;
+}
+
+.imgAutoguiado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/autoguiado.jpg);
+  width: 60%;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.imgGuiado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/guiado.jpg);
+  width: 1600px;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.imgElectrica {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../media/electrica.jpg);
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/*SECCION BODEGAS*/
+.zonasYBodegas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 90px 0;
+}
+
+.zonasYBodegas h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 35px 0;
+}
+
+.zonasYBodegas h3 {
+  font-size: 22px;
+  text-align: center;
+  padding: 35px 0;
+}
+
+.zonasYBodegas p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 2;
+}
+
+.descripcionPorZona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 40px;
+}
+
+/*SECCION OPINIONES*/
+#todasMisOpiniones {
+  font-size: 15px;
+  padding: 90px;
+}
+
+/*SECCION FAQ*/
+.faq {
+  padding: 110px;
+}
+
+.faq h2 {
+  background-color: #9e9e9e33;
+  font-size: 22;
+  color: black;
+}
+
+.btn-link:focus {
+  text-decoration: none;
+}
+
+/*SECCIÓN FOOTER*/
+#miFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 14px;
+  color: black;
+  background-color: #9e9e9e33;
+  text-align: center;
+  padding: 30px 10px;
+  border-top: 1.5px solid black;
+}
+
+#miFooter ul {
+  list-style: none;
+}
+
+#miFooter ul li {
+  padding: 5px 0;
+}
+/*# sourceMappingURL=proyectofinal.css.map */
