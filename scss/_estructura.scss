@@ -642,7 +642,20 @@ h4{
         color: $letra-blanca;
     }
 }
-
+@media all and (max-width: 992px) {
+    .faq {
+        padding: 5px;
+        padding-top: 100px;
+        width: $ancho-100;
+        .fotoFaq {
+            background-image: url(../media/faqMobile.jpg);
+            width: $ancho-100;
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
 /*SECCIÓN FOOTER*/
 #miFooter {
 	display:$flexible;

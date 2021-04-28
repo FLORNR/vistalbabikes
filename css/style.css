@@ -983,6 +983,21 @@ h4 {
   color: white;
 }
 
+@media all and (max-width: 992px) {
+  .faq {
+    padding: 5px;
+    padding-top: 100px;
+    width: 100%;
+  }
+  .faq .fotoFaq {
+    background-image: url(../media/faqMobile.jpg);
+    width: 100%;
+  }
+  .faq .fotoFaq h3 {
+    font-size: 2rem;
+  }
+}
+
 /*SECCIÓN FOOTER*/
 #miFooter {
   display: -webkit-box;
