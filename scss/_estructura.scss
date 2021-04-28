@@ -39,7 +39,7 @@ h4{
 	z-index: $profundidad-100;
 		ul {
 			list-style: none;
-			margin-left: 30px;
+			margin-left: 60px;
 		
 			li a {
 				text-decoration: none;
@@ -56,10 +56,15 @@ h4{
 						}
 					}	
 				}
-		.reserva {
-			margin-left:100px;
-            font-size: 1.2em;
-		}	
+        .navbar {
+            width: $ancho-100;
+            
+        }
+        .separarItems {
+            width: $ancho-100;
+            display: flex;
+            justify-content: space-between;
+        }
 
 		.logo {
 			width: 130px;
@@ -71,20 +76,30 @@ h4{
 			}
 		}
 		.botonReserva {
+            width: 25%;
             color: $letra-negra;
-			padding: 0 1em;
-			margin-right: 30px;
-			line-height: 2rem;
+			padding: 0.8em 0.8em;
+			margin-right: 20px;
+			line-height: 1.5rem;
 			font-size: 1em;
+            text-align: $centro;
 			text-decoration: none;
 			border-radius: 10px 10px 10px 10px;
-
+           
 			&:hover {
 				background-color: $fondo-negro;
 				color: $letra-blanca;
 				transform: scale(1.1);
-
+                a{
+                    text-decoration: none;
+                   
+                }
 			}
+            a{
+                list-style: none;
+                color: $letra-blanca; 
+                
+            }
 		}	
 	}
 /*ICONO FIJO*/
