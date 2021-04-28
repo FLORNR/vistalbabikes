@@ -972,6 +972,11 @@ h4 {
   color: black;
 }
 
+.card-header button {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 .cambio .card-header {
   background-color: #fded009c;
   color: black;
@@ -995,12 +1000,12 @@ h4 {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: white;
+  color: black;
 }
 
 .btn-link:hover {
   text-decoration: none;
-  color: white;
+  color: #3c3b3b;
 }
 
 @media all and (max-width: 992px) {
