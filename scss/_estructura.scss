@@ -227,6 +227,7 @@ h4{
 	display: flex;
     background-image: url(../media/fotocontacto.jpg);
     background-size: cover;
+    background-position: $centro;
 	background-repeat: no-repeat;
 	justify-content: $centro;
 	align-items: flex-end;
@@ -330,8 +331,8 @@ h4{
 
 
 .fotoNosotrosUno {
-	@include fotosEnNosotros(url(../media/nosotrosuno.jpg));
-        background-position:$derecha;
+	@include fotosEnNosotros(url(../media/nosotros1.jpg));
+        background-position:$centro;
         margin: 110px 0px 30px 5px;
     }
 
