@@ -124,15 +124,15 @@ h4 {
   font-size: 0.9em;
   margin-right: 40px;
   border-radius: 10px 10px 10px 10px;
+  padding: 12px;
 }
 
 #header ul li a:hover {
   background-color: black;
   color: white;
   border-radius: 10px 10px 10px 10px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  padding: 5px;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #header .navbar {
@@ -210,12 +210,17 @@ h4 {
   padding-bottom: 1.3em;
 }
 
+.carousel-indicators li {
+  height: 0px;
+}
+
 /*FORMULARIO RESERVA*/
 #miFormularioReserva {
   font-size: 13px;
   color: black;
   background-color: #9e9e9e33;
   height: auto;
+  width: 98%;
   padding: 5px 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -242,7 +247,7 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
+  width: 60%;
   min-height: 500px;
   background-image: url("../media/fotoformulario.jpg");
   background-position: left center;
@@ -256,6 +261,14 @@ h4 {
   text-align: center;
   margin: 80px 10px;
   font-size: 3rem;
+}
+
+.form-group {
+  padding: 5px;
+  border-radius: 5px 5px 5px 5px;
+  width: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*ADAPTACIÓN MOBILE*/
@@ -456,9 +469,9 @@ h4 {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -502,9 +515,9 @@ h4 {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -548,9 +561,9 @@ h4 {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -596,6 +609,9 @@ h4 {
   .nosotrosParteUno p {
     padding: 2px 10px;
     width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1.1rem;
     text-align: center;
   }
@@ -627,6 +643,9 @@ h4 {
   .nosotrosParteDos p {
     padding: 2px 10px;
     width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1.1rem;
     text-align: center;
   }
@@ -658,6 +677,9 @@ h4 {
   .nosotrosParteTres p {
     padding: 2px 10px;
     width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 1.1rem;
     text-align: center;
   }
@@ -697,11 +719,19 @@ h4 {
   text-align: left;
   line-height: 1.3;
   margin: auto;
-  padding: 110px;
+  padding: 110px 50px;
 }
 
 #todosMisServicios h3 {
   padding: 3px 0;
+}
+
+#todosMisServicios ul {
+  list-style-position: inside;
+}
+
+#todosMisServicios h4 {
+  padding: 0.25em 0.5em;
 }
 
 .detalleServicios {
@@ -727,7 +757,7 @@ h4 {
 }
 
 .experiencias {
-  padding: 0 70px;
+  padding: 0 50px;
 }
 
 .imgAutoguiado {
@@ -877,7 +907,7 @@ h4 {
 }
 
 .zonasYBodegas h2 {
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
   padding: 35px 0;
 }
@@ -908,12 +938,17 @@ h4 {
 .descripcionPorZona p {
   font-size: 0.8rem;
   text-align: left;
-  line-height: 1.3;
+  line-height: 1.1;
 }
 
 .card {
   background-color: #9e9e9e33;
   margin-bottom: 5px;
+  width: 100%;
+}
+
+.card .btn {
+  margin-top: 15px;
 }
 
 @media all and (max-width: 992px) {
@@ -1049,6 +1084,10 @@ h4 {
 
 #miFooter ul li {
   padding: 5px 0;
+}
+
+#miFooter .iconos a {
+  padding-right: 5px;
 }
 
 @media all and (max-width: 992px) {
