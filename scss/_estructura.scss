@@ -37,6 +37,7 @@ h4{
 	align-items: $centro;
 	background-color: $fondo-menu;
 	z-index: $profundidad-100;
+    box-sizing: border-box;
 		ul {
 			list-style: none;
 			margin-left: 60px;
@@ -242,7 +243,7 @@ h4{
 	justify-content: $centro;
 	align-items: $centro;
 	margin: 90px 0px;
-    width: $ancho-100;
+    width: $ancho-100 -10;
     box-sizing: border-box;
       
 }
@@ -584,6 +585,7 @@ h4{
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 110px 0;
+    box-sizing: border-box;
 		 h2{
 			font-size: 26px;
 			text-align:$centro;
@@ -613,7 +615,7 @@ h4{
 .card {
     background-color: $fondo-gris;
     margin-bottom: 5px;
-    width: 100%;
+    width: 22rem;
     .btn {
         margin-top: 15px;
     }
@@ -631,6 +633,15 @@ h4{
             margin-top: 40px;
             padding: 5px;
         }
+    }
+    .card {
+        width: 18rem;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .card {
+        width: 27rem;
     }
 }
 
@@ -723,8 +734,9 @@ h4{
 	color:$letra-negra;
 	background-color:$fondo-gris;
 	text-align:$centro;
-	padding: 30px 10px;
+	padding: 30px 5px;
 	border-top: 1.5px solid black;
+    box-sizing: border-box;
 		 ul {
 			list-style: none;
             margin-bottom: 0px;

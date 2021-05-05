@@ -111,6 +111,8 @@ h4 {
           align-items: center;
   background-color: #00000070;
   z-index: 100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #header ul {
@@ -360,7 +362,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   margin: 90px 0px;
-  width: 100%;
+  width: 100% -10;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -917,6 +919,8 @@ h4 {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 110px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .zonasYBodegas h2 {
@@ -957,7 +961,7 @@ h4 {
 .card {
   background-color: #9e9e9e33;
   margin-bottom: 5px;
-  width: 100%;
+  width: 22rem;
 }
 
 .card .btn {
@@ -985,6 +989,15 @@ h4 {
     background-color: #b6c62c;
     margin-top: 40px;
     padding: 5px;
+  }
+  .card {
+    width: 18rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .card {
+    width: 27rem;
   }
 }
 
@@ -1087,8 +1100,10 @@ h4 {
   color: black;
   background-color: #9e9e9e33;
   text-align: center;
-  padding: 30px 10px;
+  padding: 30px 5px;
   border-top: 1.5px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #miFooter ul {
