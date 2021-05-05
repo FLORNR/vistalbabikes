@@ -357,7 +357,7 @@ h4{
 
 
 .fotoNosotrosDos {
-    @include fotosEnNosotros(url(../media/nosotros2.jpg));
+    @include fotosEnNosotros(url(../media/nosotros2.png));
 	min-height: 400px;
     background-position:$izquierda;
 	}
