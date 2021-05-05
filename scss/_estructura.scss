@@ -175,7 +175,7 @@ h4{
 		position: $fijo;
 		background-color: $fondo-negro;
 		color: $letra-blanca;
-		z-index: $profundidad-100;
+		z-index: $profundidad-100 + 10;
 			 a {
 			 	&:hover {
 				background-color: $fondo-blanco;
@@ -183,6 +183,14 @@ h4{
 				border-radius:10px 10px 10px 10px;
 				}
 			}
+            .separarItems {
+                justify-content: $centro;
+                text-align: $centro;
+            }
+            .botonReserva {
+                margin: auto;
+                min-width: 250px;
+            }
 		}
 
 	.publicidadReserva {
@@ -380,7 +388,7 @@ h4{
     @mixin nosotrosMobile {
         display:$flexible;
 		flex-direction: $columna;
-		margin: 5px 5px
+		
     }
 
     @mixin fotoNosotrosMobile {
@@ -612,6 +620,7 @@ h4{
         flex-direction: $columna;
         justify-content: $centro;
         align-items: $centro;
+        padding: 70px 5px;
         h2 {
             background-color: $fondo-verde;
             margin-top: 40px;
