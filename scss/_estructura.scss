@@ -191,6 +191,9 @@ h4{
                 margin: auto;
                 min-width: 250px;
             }
+            .navbar {
+                width: 90%;
+            }
 		}
 
 	.publicidadReserva {
@@ -212,7 +215,8 @@ h4{
 	.imgForm {
 		background-position: $centro;
 		background-size: cover;
-		margin: 40px 10px;
+        width: 90%;
+		margin: 40px 5px;
 		font-size: 14px;
 		}
 
@@ -239,6 +243,7 @@ h4{
 	align-items: $centro;
 	margin: 90px 0px;
     width: $ancho-100;
+    box-sizing: border-box;
       
 }
 
