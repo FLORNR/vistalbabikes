@@ -632,6 +632,9 @@ h4{
 
 
 @media all and (max-width: 992px) {
+    .descripcionPorZona {
+        padding:10px 10px;
+    }
 
     .zonasYBodegas {
         display: $flexible;
@@ -642,12 +645,11 @@ h4{
         h2 {
             background-color: $fondo-verde;
             margin-top: 40px;
-            padding: 5px;
-        }
+            padding: 10px;
+             }
         .card {
-        width: 18rem;
+        width: 17rem;
         }
-    
     }
 }
 
@@ -788,4 +790,3 @@ h4{
         margin-right: 5px;
     }
 }
-
