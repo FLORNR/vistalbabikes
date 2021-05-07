@@ -177,7 +177,7 @@ h4{
 		background-color: $fondo-negro;
 		color: $letra-blanca;
 		z-index: $profundidad-100 + 10;
-			 a {
+			ul a {
 			 	&:hover {
 				background-color: $fondo-blanco;
 				color:$letra-negra;
@@ -191,7 +191,8 @@ h4{
             .botonReserva {
                 margin: auto;
                 min-width: 250px;
-                margin-left: 40px;
+                margin-left: 60px;
+                width: auto;
             }
             .navbar {
                 width: 90%;
