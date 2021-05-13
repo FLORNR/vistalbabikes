@@ -155,12 +155,15 @@ h4{
 	background-image: url('../media/fotoformulario.jpg');
 	background-position: $izquierda $centro;
 	background-size: cover;
-	align-items: flex-end;
+	align-items: flex-start;
 	justify-content: $centro;
 	text-align: $centro;
 	margin: 80px 10px;
-	font-size: 3rem;
-	}
+	font-size: 2rem;
+    p {
+        padding-top: 30px;
+    }
+}
 
 .form-group {
     padding: 5px;
@@ -191,6 +194,7 @@ h4{
             .botonReserva {
                 margin: auto;
                 min-width: 250px;
+                margin-top: 10px;
                 margin-left: 60px;
                 width: auto;
             }
@@ -217,11 +221,12 @@ h4{
 		}
 
 	.imgForm {
+        background-image: url(../media/fotoformularioMobile.jpg);
 		background-position: $centro;
 		background-size: cover;
         width: 90%;
 		margin: 40px 5px;
-		font-size: 14px;
+		font-size: 15px;
 		}
 
 	.mapa iframe {
@@ -328,7 +333,6 @@ h4{
     background-image: $imagen;
 	background-size: cover;
 	background-repeat: no-repeat;
-	border: 4px groove white;
     margin: 30px 0px 30px 5px;
 
 }
@@ -389,7 +393,7 @@ h4{
 
 .fotoNosotrosTres {
     @include fotosEnNosotros(url(../media/nosotros3.jpg));
-	background-position:$derecha;
+	background-position:$centro;
 	}
 
 /*ADAPTACIÓN MOBILE*/
@@ -737,9 +741,6 @@ h4{
         .fotoFaq {
             background-image: url(../media/faqMobile.jpg);
             width: $ancho-100;
-            h3 {
-                font-size: 2rem;
-            }
         }
     }
 }
