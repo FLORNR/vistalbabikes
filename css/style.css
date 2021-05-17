@@ -216,14 +216,18 @@ h4 {
   height: 0px;
 }
 
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+}
+
 /*FORMULARIO RESERVA*/
 #miFormularioReserva {
   font-size: 13px;
   color: black;
   background-color: #9e9e9e33;
   height: auto;
-  width: 98%;
-  padding: 5px 5px;
+  padding: 5px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -250,7 +254,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  min-height: 500px;
+  min-height: 565px;
   background-image: url("../media/fotoformulario.jpg");
   background-position: left center;
   background-size: cover;
@@ -266,7 +270,13 @@ h4 {
 }
 
 .imgForm p {
-  padding-top: 30px;
+  padding-top: 70px;
+}
+
+@media all and (min-width: 1440px) {
+  .imgForm {
+    min-height: 630px;
+  }
 }
 
 .form-group {
@@ -275,6 +285,7 @@ h4 {
   width: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 20px;
 }
 
 /*ADAPTACIÓN MOBILE*/
@@ -285,10 +296,15 @@ h4 {
     color: white;
     z-index: 110;
   }
-  #header ul a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 10px 10px 10px 10px;
+  #header ul {
+    margin-left: 0;
+  }
+  #header ul li a {
+    margin-right: 0;
+  }
+  #header .navbar-item {
+    margin-right: 0px;
+    text-align: center;
   }
   #header .separarItems {
     -webkit-box-pack: center;
@@ -300,17 +316,20 @@ h4 {
     margin: auto;
     min-width: 250px;
     margin-top: 10px;
-    margin-left: 60px;
     width: auto;
   }
-  #header .navbar {
-    width: 90%;
+  #header .logo {
+    margin-left: 16px;
   }
   .publicidadReserva {
     padding-top: 70px;
     width: 100%;
     height: auto;
     font-size: 14px;
+  }
+  .carousel-item {
+    width: 100%;
+    height: unset;
   }
   .navbar-toggler {
     background-color: white;
@@ -329,7 +348,7 @@ h4 {
     background-image: url(../media/fotoformularioMobile.jpg);
     background-position: center;
     background-size: cover;
-    width: 90%;
+    width: 100%;
     margin: 40px 5px;
     font-size: 15px;
   }
@@ -632,8 +651,8 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .nosotrosParteUno p {
     padding: 2px 10px;
@@ -667,8 +686,8 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .nosotrosParteDos p {
     padding: 2px 10px;
@@ -702,8 +721,8 @@ h4 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 18px;
-    padding-right: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .nosotrosParteTres p {
     padding: 2px 10px;
@@ -747,7 +766,7 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 0.9rem;
-  text-align: left;
+  text-align: justify;
   line-height: 1.3;
   margin: auto;
   padding: 110px 50px;
@@ -783,7 +802,8 @@ h4 {
 }
 
 .detalleServicios h2 {
-  font-size: 50px;
+  text-shadow: 1px 1px 1px #BDBDBD;
+  font-size: 43px;
   border: none;
 }
 
@@ -797,13 +817,20 @@ h4 {
   display: flex;
   background-image: url(../media/autoguiado.jpg);
   width: 100%;
-  min-height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 650px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.imgAutoguiado h2 {
+  padding-top: 75px;
 }
 
 .imgGuiado {
@@ -812,13 +839,16 @@ h4 {
   display: flex;
   background-image: url(../media/guiado.jpg);
   width: 100%;
-  min-height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  min-height: 580px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .imgElectrica {
@@ -827,19 +857,31 @@ h4 {
   display: flex;
   background-image: url(../media/electrica.jpg);
   width: 100%;
-  min-height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 540px;
+  background-position: top;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  text-align: center;
+}
+
+.imgElectrica h2 {
+  padding-top: 75px;
 }
 
 @media all and (max-width: 992px) {
   #todosMisServicios {
     width: 100%;
     padding: 40px 5px;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
   }
   .detalleServicios {
     display: -webkit-box;
@@ -860,6 +902,7 @@ h4 {
   }
   .experiencias {
     padding: 20px 5px;
+    text-align: left;
   }
   .imgAutoguiado {
     background-image: url(../media/autoguiadoMobile.jpg);
@@ -868,16 +911,16 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding: 5px 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 0px;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
   .imgAutoguiado h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: center;
   }
   .imgGuiado {
@@ -890,13 +933,13 @@ h4 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    padding: 5px 0px;
+    padding: 10px 0px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
   .imgGuiado h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
   .imgElectrica {
@@ -905,17 +948,18 @@ h4 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    padding: 5px 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 10px 0px;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
   .imgElectrica h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     text-align: center;
+    padding-top: 20px;
   }
 }
 
@@ -1008,16 +1052,24 @@ h4 {
     background-color: #b6c62c;
     border-radius: 15px 15px 15px 15px;
     margin-top: 40px;
-    padding: 10px;
+    padding: 20px;
     font-weight: 900;
+    width: 100%;
   }
   .zonasYBodegas .card {
-    width: 17rem;
+    width: 100%;
   }
 }
 
 @media all and (min-width: 1440px) {
-  .zonasYBodegas.card {
+  .zonasYBodegas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .zonasYBodegas .card {
     width: 27rem;
   }
 }
@@ -1168,7 +1220,7 @@ h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-bottom: 20px;
   }
   .datosUbicacion {
@@ -1176,8 +1228,8 @@ h4 {
   }
   .whatsappFijo {
     position: fixed;
-    margin-bottom: 5px;
-    margin-right: 5px;
+    margin-bottom: 8px;
+    margin-left: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

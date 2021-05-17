@@ -20,7 +20,7 @@
             <div>
   			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><a href=""></a>
     		    <span class="navbar-toggler-icon"></span>
-                </button>
+                 </button> 
             </div>
   			<div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="separarItems">
@@ -35,13 +35,26 @@
       				</li>
       				<li class="nav-item letterWhite"><a class="nav-link" href="preguntasFrecuentes.html">FAQ</a>
       				</li>
-      				<li class="nav-item letterWhite"><a class="nav-link" href="index.html#irContacto">CONTACTO</a>
+      				<li class="nav-item letterWhite"><a class="nav-link" href="index.html#irContacto" onclick="myClick()">CONTACTO</a>
       				</li>
       			</ul>
             </div>
             <div class=" tipografiaN-semi-bold bgGreen reserva botonReserva">
-                <span><a href="index.html#miFormularioReserva">HACÉ TU RESERVA</a></span>
+                <span>
+                    <a href="index.html#miFormularioReserva" onclick="myClick()">HACÉ TU RESERVA</a>
+                </span>
             </div>
+            
+            <script type="text/javascript">
+            function myClick() {
+                var element = document.getElementById("navbarSupportedContent");
+                if(element.classList.contains("show")){
+                element.classList.remove("show");
+                }else{
+                element.classList.add("show");
+                }
+            }
+            </script>
      		</div>
 		</nav>
 				<!-- Logo y menú de navegación ->HEADER -->
@@ -59,19 +72,16 @@
     				<div class="carousel-item active">
       					<img src="media/portada.jpg" srcset="media/portadaMobile.jpg 576w, media/portada.jpg" class="d-block w-100" alt="...">
       					<div class="carousel-caption d-none d-md-block">
-        					<h5 class="tipografiaN-black" >VENÍ Y CONOCÉ LOS CAMINOS DEL VINO</h5>
       					</div>
     				</div>
     				<div class="carousel-item">
       					<img src="media/portada2.jpg" srcset="media/portada2Mobile.jpg 576w, media/portada2.jpg" class="d-block w-100" alt="...">
       					<div class="carousel-caption d-none d-md-block">
-       			 			<h5 class="tipografiaN-black">PASEÁ CON AMIGOS Y FAMILIA</h5>
       					</div>
     				</div>
     				<div class="carousel-item">
       					<img src="media/portada3.jpg" srcset="media/portada3Mobile.jpg 576w, media/portada3.jpg" class="d-block w-100" alt="...">
       					<div class="carousel-caption d-none d-md-block">
-       						<h5 class="tipografiaN-black">DISFRUTÁ DE TU DÍA, EN BICI!</h5>
      			 		</div>
    			 		</div>
   				</div>
@@ -106,19 +116,21 @@
 						<input class="form-control my-1" type="e-mail" placeholder="Ingresá tu e-mail">
 					</div>
 					<div>
-						<input class="form-control my-1" type="text" placeholder="Ingresá tu telefono´con código de área">
+						<input class="form-control my-1" type="tel" placeholder="Ingresá tu teléfono con código de área">
 					</div>
 					<div>
 						<input class="form-control my-1" type="text" placeholder="Dirección y Nombre de Hospedaje">
 					</div>
 					<div>
-						<input class="form-control my-1" type="text" placeholder="Fecha de Nacimiento">
+                        <label for="fechaNacimiento" class="ml-2">Fecha de Nacimiento</label>
+						<input class="form-control my-1" name="fechaNacimiento" type="date" placeholder="Fecha de Nacimiento">
 					</div>
 					<div>
-						<input class="form-control my-1" type="text" placeholder="Fecha de Tour">
+                        <label for="fechaDelTour" class="ml-2">Fecha del Tour</label>
+						<input class="form-control my-1" name="fechaDelTour" type="date" placeholder="Fecha de Tour">
 					</div>
 					<div>
-						<input class="form-control my-1" type="text" placeholder="Cantidad de Ciclistas">
+						<input class="form-control my-1" type="number" placeholder="Cantidad de Ciclistas">
 					</div>
 					<div class="custom-control custom-radio my-1">
   						<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
@@ -168,7 +180,7 @@
 	</main>
 	<footer id="miFooter" class="tipografiaN-extra-light">
 		<div class="home iconos"> <!-- logos de redes con enlaces id miFooter -->
-			<a href="https://api.whatsapp.com/send?phone=542613423499"><img width="45px" src="media/whatsapp.png" alt=""></a>
+			<a href="https://api.whatsapp.com/send?phone=542613423499" target="_blank"><img width="45px" src="media/whatsapp.png" alt=""></a>
 			<a href="https://www.facebook.com/vistalbabikes"><img width="45px" src="media/facebook.png" alt=""></a>
 			<a href="https://www.instagram.com/vistalbabikes/"><img width="45px" src="media/instagram.png" alt=""></a>
 			<a href="mailto: info@vistalbabikes.com"><img width="45px" src="media/email.png" alt=""></a>
